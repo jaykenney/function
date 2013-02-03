@@ -27,15 +27,27 @@ You can add attributes to the function similar to Python.
 
 ```ruby
 
-f = Function.new {
-   self.x + self.y
-}
+f = Function.new do |y|
+   self.x + y
+end
+
+f.respond_to?(:"x=") # <-- true
+f.respond_to?(:x)  # <-- false
 
 f.x = 3
-f.y = 4
 
-f.call # <-- returns 7
+f.respond_to?(:x) # <-- true
 
+f.x    # <-- returns 3
+
+f.call(4) # <-- returns 7
+
+```
+
+## Installation
+
+```bash
+gem install function
 ```
 
 ## Contributing
