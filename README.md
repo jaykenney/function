@@ -12,13 +12,13 @@ p = Proc.new {
   self.class
 }
 
-p.call # <-- Will return Object 
-
-f = Function.new {
-  self.class
-}
-
-f.call # <-- Will return Function
+p.call              # <-- Will return Object 
+                    
+f = Function.new {  
+  self.class        
+}                   
+                    
+f.call              # <-- Will return Function
 
 ```
 
@@ -32,15 +32,15 @@ f = Function.new do |y|
 end
 
 f.respond_to?(:"x=") # <-- true
-f.respond_to?(:x)  # <-- false
+f.respond_to?(:x)    # <-- false
 
 f.x = 3
 
-f.respond_to?(:x) # <-- true
+f.respond_to?(:x)    # <-- true
 
-f.x    # <-- returns 3
+f.x                  # <-- returns 3
 
-f.call(4) # <-- returns 7
+f.call(4)            # <-- returns 7
 
 ```
 
