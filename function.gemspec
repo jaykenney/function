@@ -16,9 +16,15 @@ Gem::Specification.new do |s|
   s.files = [
     'MIT-LICENSE', 
     'Rakefile',
-    'README.rdoc',
+    'README.md',
     'lib/function.rb'
-    ]
-  s.test_files = Dir["test/**/*"]
+  ]
+  
+  s.test_files = [
+    'spec/function_spec.rb',
+    'spec/spec_helper.rb'
+  ]
 
+  s.add_development_dependency 'rspec'
+  
 end
