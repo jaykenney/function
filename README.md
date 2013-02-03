@@ -1,7 +1,7 @@
 # Function
 
-Functions is a small Ruby library that allows you to create Function objects. These differ
-from Proc objects in a few key places.
+Functions is a small Ruby library that allows you to create Function objects that 
+remind you of Python. These differ from Proc objects in a few key places.
 
 ## Scope
 The scope of the block is the class instance, not the surrounding scope where it was
@@ -52,3 +52,6 @@ gem install function
 
 ## Contributing
 Fork the project, create an issue and make a pull request.
+
+## Acknowledgments 
+Largely the Python v. Ruby debates on the interwebs and water cooler.
