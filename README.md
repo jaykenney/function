@@ -3,6 +3,9 @@
 Functions is a small Ruby library that allows you to create Function objects that 
 remind you of Python. These differ from Proc objects in a few key places.
 
+## Moved
+This site is also hosted at https://www.github.com/therealjasonkenney/function 
+
 ## Scope
 The scope of the block is the class instance, not the surrounding scope where it was
 declared.
